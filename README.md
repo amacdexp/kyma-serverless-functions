@@ -2,7 +2,7 @@
 Kyma Serverless function examples
 
 
-#Create git repository secret
+#Create git repository secret 
 kubectl apply -n <namespace> --kubeconfig ~/.kube/kubeconfig.yaml -f - <<EOF
  apiVersion: v1
  kind: Secret
