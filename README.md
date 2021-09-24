@@ -2,7 +2,7 @@
 Kyma Serverless function examples
 
 
-#Create git repository secret 
+# Create git repository secret  
 kubectl apply -n <namespace> --kubeconfig ~/.kube/kubeconfig.yaml -f - <<EOF
  apiVersion: v1
  kind: Secret
@@ -15,7 +15,7 @@ kubectl apply -n <namespace> --kubeconfig ~/.kube/kubeconfig.yaml -f - <<EOF
 EOF
 
   
-#Create link to GIT Repository 
+# Create link to GIT Repository  
 kubectl apply -n <namespace> --kubeconfig ~/.kube/kubeconfig.yaml -f - <<EOF
 apiVersion: serverless.kyma-project.io/v1alpha1
 kind: GitRepository
@@ -31,7 +31,7 @@ EOF
   
 
   
-#Python 3.8 Hello World
+# Python 3.8 Hello World 
 kubectl apply -n <namespace> --kubeconfig ~/.kube/kubeconfig.yaml -f - <<EOF  
 apiVersion: serverless.kyma-project.io/v1alpha1
 kind: Function
