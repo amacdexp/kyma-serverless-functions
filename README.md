@@ -1,7 +1,7 @@
 # kyma-serverless-functions
 Kyma Serverless function examples
 
-[K8S Kyma Serverless functions linked to git repositories] (https://kyma-project.io/docs/components/serverless#tutorials-create-a-function-from-git-repository-sources)
+[K8S Kyma Serverless functions linked to git repositories](https://kyma-project.io/docs/components/serverless#tutorials-create-a-function-from-git-repository-sources)
 
 
 # Create git repository secret  
