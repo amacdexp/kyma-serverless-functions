@@ -54,7 +54,19 @@ EOF
   
   
 # Troubleshooting
+[Kubectl cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 ```
-kubectl cluster-info
+kubectl cluster-info -n <namespace>
 kubectl get functions -n <namespace>
+kubectl api-resources
+kubectl get gitrepositories -n <namespace>
+kubectl get pods -n <namespace>
+kubectl get pods -o=name --field-selector=status.phase=Running -n <namespace> | grep py-hello-world
+kubectl get pods -l 'serverless.kyma-project.io/function-name in (py-hello-world)' --field-selector=status.phase=Running   -n i337529 --output=jsonpath={.items..metadata.name}
+
+kubectl exec -n i337529 --stdin --tty $(kubectl get pods -l 'serverless.kyma-project.io/function-name in (py-hello-world)' --field-selector=status.phase=Running   -n i337529 --output=jsonpath={.items..metadata.name}) -- cat kubeless.py
+
+kubectl exec -n i337529 --stdin --tty $(kubectl get pods -l 'serverless.kyma-project.io/function-name in (py-hello-world)' --field-selector=status.phase=Running   -n i337529 --output=jsonpath={.items..metadata.name}) -- /bin/sh
+
+
 ```
