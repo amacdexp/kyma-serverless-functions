@@ -1,1 +1,3 @@
+time
+hdbcli
 hana-ml
