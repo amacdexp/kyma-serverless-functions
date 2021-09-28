@@ -1,0 +1,5 @@
+name: py-hello-hana
+#namespace: default
+runtime: python38
+source:
+    sourceType: git
