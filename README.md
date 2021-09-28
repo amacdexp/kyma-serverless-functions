@@ -98,6 +98,16 @@ spec:
   reference: main
   baseDir: py-hello-hana
   env:
+    - name: HANA_HOST
+      valueFrom:
+        configMapKeyRef:
+          name: hana-endpoint
+          key: host
+    - name: HANA_PORT
+      valueFrom:
+        configMapKeyRef:
+          name: hana-endpoint
+          key: port
     - name: DB_USERNAME
       valueFrom:
         secretKeyRef:
