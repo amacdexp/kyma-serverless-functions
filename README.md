@@ -1,12 +1,14 @@
 # kyma-serverless-functions
 Kyma Serverless function examples  
+[K8S Kyma Serverless functions linked to git repositories](https://kyma-project.io/docs/components/serverless#tutorials-create-a-function-from-git-repository-sources)
+
 
 Includes a: 
 > 1. Basic Hello World
-> 2. Basic Hello Hana (needs Hana DB, e.g. [Hana Cloud trial](https://www.sap.com/cmp/td/sap-hana-cloud-trial.html) 
+> 2. Basic Hello Hana (needs Hana DB, e.g. [Hana Cloud trial](https://www.sap.com/cmp/td/sap-hana-cloud-trial.html) )
 
 
-[K8S Kyma Serverless functions linked to git repositories](https://kyma-project.io/docs/components/serverless#tutorials-create-a-function-from-git-repository-sources)
+
 
 
 # Create git repository secret  
