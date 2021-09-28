@@ -52,8 +52,21 @@ spec:
 EOF
 ``` 
 
+# Create HANA endpoint configmap
+```
+kubectl apply -n <namespace>  -f - <<EOF  
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hana-endpoint
+  namespace: <namespace>
+data:
+  host: "<endpoint hostname of Hana.. no https>"
+  port: "<port>"
+EOF
+```
 
-# Create hana db secret  
+# Create HANA db secret  
 ```
 kubectl apply -n <namespace> -f - <<EOF
  apiVersion: v1
